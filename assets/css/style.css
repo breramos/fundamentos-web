@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
+
+:root {
+    --background-body: #fff9e7;
+    --background-nav: #3a53e3;
+    --background-footer: #000000;
+    --sombra: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* box-sizing: zera altura e largura da página no navegador */
+
+p {
+
+    font-family: 'lato', Roboto;
+    margin-bottom: 1.5rem;
+
+}
+
+/*  rem: medida relativa ao tamanho da fonte. 
+    A medida padrão da fonte é 16px. Quando coloca-se 1.5rem, significa dizer
+    que a fonte agora terá 16px (1rem) + 8 px (0.5rem) = 24px ou 1.5 rem
+    1 rem = 16 px (tamanho padrão da fonte no navegador)
+*/
+
+h1, h2, h3, a {
+
+    font-family: 'lato', cursive;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: var(--background-footer);
+
+}
+
+h1 {
+
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3px;
+    text-align: left;
+
+}
+
+h2 {
+
+    font-size: 2rem;
+}
+
+h3 {
+
+     font-size: 1.5rem;
+     margin-bottom: 2rem;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+h2, h3 {
+
+    text-align: center;
+
+}
+
+
+body {
+
+    background-color: var(--background-body);
+
+}
+
+nav {
+
+    margin: 0 auto;
+    width: 80vw;
+    background-color: var(--background-nav);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;    
+    padding: 2.25rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px var(--sombra);
+
+}
+
+.logo {
+
+    display: flex;
+    width: auto;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+
+}
+
+.icone {
+
+    width: 5rem;
+    padding-left: 1rem;
+}
+
+.titulo {
+
+    font-family: 'lato', cursive;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+ul {
+
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+    
+}
+
+nav a {
+
+    color: white;
+
+
+}
+
+main {
+
+    width: 80vw;
+    margin: 10px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-right: 150px;
+    background-color: goldenrod;
+    border-radius: 16px;
+    gap: 20px;
+}
+
+.foto {
+
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--sombra);
+
+}
+
+footer {
+    
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--background-footer);
+
+}
+
+/*  Estilização do formulário */
+
+hr {
+
+    margin: 1rem;    
+}
+
+label {
+
+    font-family: 'lato', Roboto;
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+input, textarea, button {
+
+    font-family: 'lato', Roboto;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: black;
+}
+
+button {
+
+    font-family: 'lato', Roboto;
+    background-color: var(--background-nav);
+    font-weight: 800;
+    color: white;
+}
+
+button:hover {
+
+    background-color: navy;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: var(--background-nav);
+    
+}
